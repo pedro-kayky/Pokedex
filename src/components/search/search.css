@@ -1,0 +1,36 @@
+.react-autosuggest__container {
+    width: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suggestion-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-search {
+    font-size: 17px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid grey;
+    width: 100%;
+}
+
+.react-autosuggest__suggestions-container {
+    position: absolute;
+    background: white;
+    border: 1px solid grey;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+
+
