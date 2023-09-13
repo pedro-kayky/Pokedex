@@ -1,21 +1,16 @@
 import React from 'react';
-import  ReactDOM  from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 import DetailPage from './components/routes/detail-page';
-import './index.css'
+import './index.css';
 
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      
       <Route path="/" element={<App />} />
-    
       <Route path="/pokemon/:name" element={<DetailPage />} />
-
-    </Routes> 
-    </BrowserRouter>
-  
+    </Routes>
+  </BrowserRouter>,
+  document.getElementById('root')
 );
